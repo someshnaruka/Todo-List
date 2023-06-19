@@ -28,9 +28,8 @@ const Item = mongoose.model("Item", itemsSchema);
 const getMilk = new Item({ name: "GetMilk" });
 const running = new Item({ name: "Running" });
 const football = new Item({ name: "Football" });
-const Gardening = new Item({ name: "trim plants" });
 
-const itemArr = [getMilk, running, football,Gardening];
+const itemArr = [getMilk, running, football];
 
 const customSchema= new mongoose.Schema({
   name:String,
